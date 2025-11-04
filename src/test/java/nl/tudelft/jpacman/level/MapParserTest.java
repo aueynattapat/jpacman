@@ -32,6 +32,7 @@ public class MapParserTest {
     @Test
     public void testParseMapGood() {
         MockitoAnnotations.initMocks(this);
+
         assertNotNull(boardFactory);
         assertNotNull(levelFactory);
         Mockito.when(levelFactory.createGhost()).thenReturn(blinky);
